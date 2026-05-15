@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Abigail Conecta Contigo | Maria Silvia Milanese</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,700&amp;family=Manrope:wght@400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#785656",
+                    "surface-container-lowest": "#ffffff",
+                    "outline-variant": "#d4c3c2",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#4a4643",
+                    "on-tertiary": "#ffffff",
+                    "surface": "#fbf9f6",
+                    "secondary-container": "#e6ded7",
+                    "inverse-surface": "#30312f",
+                    "tertiary-fixed-dim": "#ccc5c1",
+                    "secondary-fixed": "#e9e1da",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed": "#e8e1dc",
+                    "on-surface-variant": "#504444",
+                    "on-secondary-fixed-variant": "#4a4641",
+                    "surface-bright": "#fbf9f6",
+                    "inverse-primary": "#e8bcbc",
+                    "on-primary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "background": "#fbf9f6",
+                    "on-secondary-fixed": "#1e1b17",
+                    "surface-variant": "#e4e2df",
+                    "surface-tint": "#785656",
+                    "on-background": "#1b1c1a",
+                    "primary-fixed": "#ffdad9",
+                    "outline": "#827473",
+                    "on-surface": "#1b1c1a",
+                    "surface-container-low": "#f5f3f0",
+                    "secondary": "#625e58",
+                    "surface-container-highest": "#e4e2df",
+                    "error-container": "#ffdad6",
+                    "surface-dim": "#dbdad7",
+                    "on-tertiary-fixed": "#1e1b18",
+                    "primary-container": "#b78f8f",
+                    "on-error-container": "#93000a",
+                    "primary-fixed-dim": "#e8bcbc",
+                    "on-primary-fixed": "#2d1415",
+                    "surface-container": "#efeeeb",
+                    "inverse-on-surface": "#f2f0ed",
+                    "on-tertiary-container": "#34312d",
+                    "surface-container-high": "#eae8e5",
+                    "on-secondary-container": "#67625c",
+                    "on-primary-container": "#45292a",
+                    "tertiary-container": "#9d9894",
+                    "on-primary-fixed-variant": "#5e3f3f",
+                    "tertiary": "#625e5a",
+                    "secondary-fixed-dim": "#ccc5be"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "gutter": "24px",
+                    "stack-lg": "48px",
+                    "stack-sm": "12px",
+                    "section-gap": "120px",
+                    "margin-mobile": "20px",
+                    "stack-md": "24px",
+                    "container-max": "1140px"
+            },
+            "fontFamily": {
+                    "label-md": ["Manrope"],
+                    "body-lg": ["Manrope"],
+                    "headline-md": ["Newsreader"],
+                    "display": ["Newsreader"],
+                    "headline-lg": ["Newsreader"],
+                    "body-md": ["Manrope"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "display": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .serif-italic { font-style: italic; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-[#F7F5F2] dark:bg-stone-950 border-b border-[#F0E9E4] dark:border-stone-800 shadow-[0_20px_40px_rgba(111,106,100,0.08)]">
+<div class="flex justify-between items-center w-full max-w-[1140px] mx-auto h-20 px-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#B78F8F] text-2xl" data-icon="psychology">psychology</span>
+<span class="text-xl font-bold font-serif text-[#6F6A64] dark:text-[#F0E9E4]">Abigail Conecta Contigo</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#6F6A64] dark:text-stone-400 font-label-md text-label-md hover:text-[#B78F8F] transition-colors" href="#about">Metodología</a>
+<a class="text-[#6F6A64] dark:text-stone-400 font-label-md text-label-md hover:text-[#B78F8F] transition-colors" href="#services">Servicios</a>
+<button class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-full font-label-md text-label-md hover:opacity-90 transition-all">
+                    Agendar gratis
+                </button>
+</div>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<main class="mt-20">
+<!-- Hero Section -->
+<section class="relative pt-24 pb-32 overflow-hidden">
+<div class="max-w-[1140px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 space-y-8">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm" data-icon="verified">verified</span>
+                        Psicóloga Maria Silvia Milanese
+                    </div>
+<h1 class="font-display text-display text-on-surface leading-tight">
+                        Construye la <span class="text-primary italic">felicidad</span> y alcanza la plenitud en poco tiempo
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                        Gestión emocional profunda y acompañamiento profesional diseñado para transformar tu bienestar desde la primera sesión.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-label-md text-label-md hover:shadow-lg transition-all flex items-center justify-center gap-2">
+                            Solicitar consulta gratuita
+                            <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<button class="border border-outline text-on-surface px-8 py-4 rounded-full font-label-md text-label-md hover:bg-surface-container transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" data-icon="play_circle">play_circle</span>
+                            Ver metodología
+                        </button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl relative group">
+<img alt="Maria Silvia Milanese" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Professional psychologist Maria Silvia Milanese smiling warmly in a bright modern office with soft natural lighting and indoor plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJKrkD6GsyahVUpyybaN_7bUI8YhfrtlpsIFds18Paxe87WYYC6Cu7qjKlpx1aO0l6WxWgLvwmiokJ8CC4OmC4JJLZNBRJCdSscHPHYdPDKNVra5ZFpo9nb5-FNARTvxcZ6TF6H57Ja6WiqrOi-sut7mzbwQgJm4C50eEUZrGYlZLxLvbwMV8ZmOXbcmp63JCIM_mmishbq4qPYRfDnhl1dmIVLrOrLXykVxcHHmP-boTyf8WqCmDHDkLynlKJj5MEyuP70L9zUfRI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-2xl shadow-xl border border-outline-variant max-w-[200px]">
+<div class="flex gap-1 mb-2">
+<span class="material-symbols-outlined text-primary text-xs" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-xs" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-xs" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-xs" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-xs" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-label-md text-[12px] text-on-surface leading-tight">Más de 500 pacientes acompañados con éxito.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- About Me: Bento Style -->
+<section class="py-section-gap bg-surface-container-low" id="about">
+<div class="max-w-[1140px] mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8 bg-surface-container-lowest p-10 rounded-[2rem] border border-outline-variant flex flex-col justify-between">
+<div>
+<h2 class="font-headline-lg text-headline-lg mb-6">Maria Silvia Milanese</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-relaxed">
+                                Especialista en Psicología con más de 20 años de trayectoria en Argentina. Mi enfoque integra la calidez humana con el rigor clínico para ofrecerte un espacio de transformación real.
+                            </p>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-2 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md">Adultos y pareja</span>
+<span class="px-4 py-2 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md">Mindfulness</span>
+<span class="px-4 py-2 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md">TCC aplicada</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 bg-primary text-on-primary p-10 rounded-[2rem] flex flex-col items-center justify-center text-center">
+<span class="text-6xl font-display mb-2">+20</span>
+<p class="font-label-md text-label-md uppercase tracking-widest opacity-80">Años de Experiencia</p>
+</div>
+<div class="md:col-span-4 bg-tertiary text-on-tertiary p-10 rounded-[2rem] flex flex-col justify-end min-h-[300px] relative overflow-hidden">
+<span class="material-symbols-outlined text-8xl absolute -top-4 -right-4 opacity-10" data-icon="favorite">favorite</span>
+<h3 class="font-headline-md text-headline-md mb-4">Empatía Radical</h3>
+<p class="text-sm opacity-90">Un espacio libre de juicios donde tu historia es el centro de todo el proceso terapéutico.</p>
+</div>
+<div class="md:col-span-8 bg-[#F0E9E4] dark:bg-stone-900 p-10 rounded-[2rem] border border-outline-variant flex items-center gap-8">
+<div class="hidden sm:block w-32 h-32 rounded-full overflow-hidden flex-shrink-0">
+<img alt="Therapy space" class="w-full h-full object-cover" data-alt="Interior of a calm therapy room with warm lighting, comfortable chairs, and soft minimalist decor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQ9c6qqZprGIK2NDv9hGkGnQMGxnkXx1BL8AA_E7ZgDfTYoaMTJfscW9Gz5rehayyAIvy6pSeKJGda0VL1urdz1EnEjytkc7KVw547v4j9kuFAIqUEVC3MpiU-HC8DOF8gCUoRHOTtBcfKi9nCpiMbX7mKZN1kr4BDUDWVbnM5URJWhWZJjwf9ssSNOjGqGz8EDEnL1vT4CMBIF81vm1s3WDLf31UFN049aBNtytTMI6Aaoz_Q-B1XX55qrGTN6KAQ3x-3CD-kWJOi"/>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md mb-2">Por qué trabajar conmigo</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                Brindo herramientas concretas desde la primera sesión. Mi método BePositive se centra en tus fortalezas para generar cambios sostenibles.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- How I Can Help -->
+<section class="py-section-gap">
+<div class="max-w-[1140px] mx-auto px-6">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<h2 class="font-display text-display mb-6">¿Cómo puedo ayudarte?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Identifica el desafío que estás atravesando y comencemos a trabajar en tu bienestar hoy mismo.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Cards -->
+<div class="p-8 rounded-3xl border border-outline-variant hover:border-primary transition-colors group">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 group-hover:scale-110 transition-transform" data-icon="energy_savings_leaf">energy_savings_leaf</span>
+<h4 class="font-headline-md text-headline-md mb-3">Ansiedad</h4>
+<p class="text-on-surface-variant">Aprende a calmar tu mente y recuperar el control sobre tus pensamientos y emociones.</p>
+</div>
+<div class="p-8 rounded-3xl border border-outline-variant hover:border-primary transition-colors group">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 group-hover:scale-110 transition-transform" data-icon="groups">groups</span>
+<h4 class="font-headline-md text-headline-md mb-3">Relaciones</h4>
+<p class="text-on-surface-variant">Mejora tus vínculos y establece límites saludables con herramientas de comunicación asertiva.</p>
+</div>
+<div class="p-8 rounded-3xl border border-outline-variant hover:border-primary transition-colors group">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 group-hover:scale-110 transition-transform" data-icon="self_improvement">self_improvement</span>
+<h4 class="font-headline-md text-headline-md mb-3">Autoestima</h4>
+<p class="text-on-surface-variant">Reconstruye la confianza en ti mismo y reconoce tu valor intrínseco de forma sólida.</p>
+</div>
+<div class="p-8 rounded-3xl border border-outline-variant hover:border-primary transition-colors group">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 group-hover:scale-110 transition-transform" data-icon="block">block</span>
+<h4 class="font-headline-md text-headline-md mb-3">Bloqueos</h4>
+<p class="text-on-surface-variant">Supera el estancamiento emocional y profesional mediante estrategias de TCC aplicada.</p>
+</div>
+<div class="p-8 rounded-3xl border border-outline-variant hover:border-primary transition-colors group">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 group-hover:scale-110 transition-transform" data-icon="update">update</span>
+<h4 class="font-headline-md text-headline-md mb-3">Hábitos</h4>
+<p class="text-on-surface-variant">Instala rutinas positivas que sostengan tu felicidad y salud mental a largo plazo.</p>
+</div>
+<div class="p-8 rounded-3xl border border-outline-variant hover:border-primary transition-colors group">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 group-hover:scale-110 transition-transform" data-icon="ecg_heart">ecg_heart</span>
+<h4 class="font-headline-md text-headline-md mb-3">Duelo</h4>
+<p class="text-on-surface-variant">Atraviesa los procesos de pérdida con acompañamiento compasivo y herramientas de sanación.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Methodology: BePositive -->
+<section class="py-section-gap bg-secondary-container/30">
+<div class="max-w-[1140px] mx-auto px-6">
+<div class="flex flex-col lg:flex-row gap-16 items-center">
+<div class="lg:w-1/2">
+<h2 class="font-display text-display mb-6">Metodología <span class="text-primary italic">BePositive</span></h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">
+                            Mi método no solo trata síntomas, sino que potencia tus fortalezas naturales para generar un cambio profundo y duradero en tu actitud frente a la vida.
+                        </p>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center flex-shrink-0 font-bold">1</div>
+<div>
+<h4 class="font-headline-md text-[20px] mb-2">Autoconocimiento</h4>
+<p class="text-on-surface-variant">Entender quién eres y qué necesitas para sentirte pleno en cada área de tu vida.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center flex-shrink-0 font-bold">2</div>
+<div>
+<h4 class="font-headline-md text-[20px] mb-2">Cambio de Actitud</h4>
+<p class="text-on-surface-variant">Transformar patrones de pensamiento limitantes en perspectivas constructivas.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center flex-shrink-0 font-bold">3</div>
+<div>
+<h4 class="font-headline-md text-[20px] mb-2">Hábitos Felices</h4>
+<p class="text-on-surface-variant">Implementar acciones diarias que automaticen tu bienestar emocional.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2 relative">
+<div class="aspect-square rounded-full border-[24px] border-surface-container overflow-hidden">
+<img alt="Balance" class="w-full h-full object-cover" data-alt="Person practicing yoga in a serene outdoor setting at sunrise, symbolizing balance and mental clarity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe-mUH26p6b2rT52mVINTPv4S_IfFz2Zlfbfo8dnq8su1YvkdXh2fthyf647lTIAYDstGz4PPZjniCpVXMjglFCA1uu41o4djvSt6KwHKKwf7cFpVfAcTVd26hevCRPiwLnjilR8mwzdNxUhqEEmueBsaJIBzNujv0dcQrzSPkFgK-xJD1uugiCSgkiLIcCUqXAJJL8ZsQH2j3jxSsi-3BN0u370EC8bbICKvZeJEiCZufUysqx5Jq9cfjNcluI6ZRvHEO23ijmu4S"/>
+</div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-surface-container-lowest p-8 rounded-full shadow-2xl">
+<span class="material-symbols-outlined text-primary text-5xl" data-icon="bubble_chart">bubble_chart</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-section-gap">
+<div class="max-w-[1140px] mx-auto px-6">
+<h2 class="font-display text-display text-center mb-16">Voces que confían</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-8 bg-surface-container-low rounded-3xl relative">
+<span class="material-symbols-outlined text-primary/20 text-6xl absolute top-4 right-4" data-icon="format_quote">format_quote</span>
+<p class="font-body-md italic mb-8 relative z-10 text-on-surface">"Maria me ayudó a encontrar claridad en un momento de mucha ansiedad. Sus herramientas son prácticas y fáciles de aplicar día a día."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container"></div>
+<div>
+<h5 class="font-label-md text-label-md">Maria G.</h5>
+<p class="text-xs text-on-surface-variant">Paciente individual</p>
+</div>
+</div>
+</div>
+<div class="p-8 bg-surface-container-low rounded-3xl relative">
+<span class="material-symbols-outlined text-primary/20 text-6xl absolute top-4 right-4" data-icon="format_quote">format_quote</span>
+<p class="font-body-md italic mb-8 relative z-10 text-on-surface">"Nuestra terapia de pareja fue un antes y un después. Aprendimos a escucharnos y a construir desde el amor y no desde el conflicto."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container"></div>
+<div>
+<h5 class="font-label-md text-label-md">Carlos B.</h5>
+<p class="text-xs text-on-surface-variant">Terapia de pareja</p>
+</div>
+</div>
+</div>
+<div class="p-8 bg-surface-container-low rounded-3xl relative">
+<span class="material-symbols-outlined text-primary/20 text-6xl absolute top-4 right-4" data-icon="format_quote">format_quote</span>
+<p class="font-body-md italic mb-8 relative z-10 text-on-surface">"Una profesional increíble. Me brindó el apoyo necesario para superar un duelo complejo con mucha compasión y sabiduría."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-tertiary-container"></div>
+<div>
+<h5 class="font-label-md text-label-md">Laura S.</h5>
+<p class="text-xs text-on-surface-variant">Paciente individual</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Booking Section -->
+<section class="py-section-gap bg-[#F0E9E4]" id="booking">
+<div class="max-w-[1140px] mx-auto px-6">
+<div class="bg-surface-container-lowest rounded-[3rem] shadow-2xl overflow-hidden flex flex-col lg:flex-row">
+<div class="lg:w-2/5 bg-primary p-12 text-on-primary flex flex-col justify-between">
+<div>
+<h2 class="font-display text-4xl mb-6">Agenda tu consulta inicial gratuita</h2>
+<p class="opacity-90 mb-12">Daremos el primer paso juntos. Son 20 minutos para conocernos, entender tu situación y diseñar tu camino de sanación.</p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>
+                                    Sin compromiso alguno
+                                </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>
+                                    Privacidad 100% garantizada
+                                </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>
+                                    Modalidad Online (Zoom/Meet)
+                                </li>
+</ul>
+</div>
+<div class="mt-12">
+<p class="font-label-md text-sm italic">"Tu bienestar no puede esperar más."</p>
+</div>
+</div>
+<div class="lg:w-3/5 p-12 bg-surface">
+<div class="grid grid-cols-7 gap-4 mb-8 text-center">
+<span class="text-xs font-label-md opacity-50">L</span>
+<span class="text-xs font-label-md opacity-50">M</span>
+<span class="text-xs font-label-md opacity-50">M</span>
+<span class="text-xs font-label-md opacity-50">J</span>
+<span class="text-xs font-label-md opacity-50">V</span>
+<span class="text-xs font-label-md opacity-50">S</span>
+<span class="text-xs font-label-md opacity-50">D</span>
+<!-- Mock Calendar Days -->
+<button class="aspect-square flex items-center justify-center rounded-full hover:bg-surface-container transition-colors opacity-30">28</button>
+<button class="aspect-square flex items-center justify-center rounded-full hover:bg-surface-container transition-colors opacity-30">29</button>
+<button class="aspect-square flex items-center justify-center rounded-full hover:bg-surface-container transition-colors opacity-30">30</button>
+<button class="aspect-square flex items-center justify-center rounded-full bg-primary text-on-primary font-bold">1</button>
+<button class="aspect-square flex items-center justify-center rounded-full hover:bg-surface-container transition-colors">2</button>
+<button class="aspect-square flex items-center justify-center rounded-full hover:bg-surface-container transition-colors">3</button>
+<button class="aspect-square flex items-center justify-center rounded-full hover:bg-surface-container transition-colors">4</button>
+<!-- More days... -->
+</div>
+<div class="space-y-4">
+<p class="font-label-md text-label-md mb-4">Horarios disponibles para el 1 de Octubre:</p>
+<div class="grid grid-cols-3 gap-3">
+<button class="py-3 px-4 border border-outline-variant rounded-xl hover:bg-primary-container hover:text-on-primary-container transition-all text-sm">09:00 AM</button>
+<button class="py-3 px-4 border border-outline-variant rounded-xl hover:bg-primary-container hover:text-on-primary-container transition-all text-sm">11:30 AM</button>
+<button class="py-3 px-4 border border-outline-variant rounded-xl hover:bg-primary-container hover:text-on-primary-container transition-all text-sm">04:00 PM</button>
+</div>
+</div>
+<button class="w-full mt-12 bg-primary text-on-primary py-4 rounded-full font-label-md hover:shadow-xl transition-all">Confirmar selección</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#F0E9E4] dark:bg-stone-900 border-t border-[#6F6A64]/10 py-12">
+<div class="flex flex-col md:flex-row justify-between items-center w-full max-w-[1140px] mx-auto px-6 gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="text-lg font-bold font-serif text-[#6F6A64] dark:text-[#F0E9E4]">Abigail Conecta Contigo</span>
+<p class="text-[#6F6A64] dark:text-stone-400 font-serif text-sm max-w-xs text-center md:text-left">Acompañamiento psicológico profesional para una vida plena y consciente.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-[#6F6A64] dark:text-stone-400 font-serif text-sm hover:text-[#B78F8F] transition-all" href="#">Servicios</a>
+<a class="text-[#6F6A64] dark:text-stone-400 font-serif text-sm hover:text-[#B78F8F] transition-all" href="#">Metodología</a>
+<a class="text-[#6F6A64] dark:text-stone-400 font-serif text-sm hover:text-[#B78F8F] transition-all" href="#">Testimonios</a>
+<a class="text-[#6F6A64] dark:text-stone-400 font-serif text-sm hover:text-[#B78F8F] transition-all" href="#">Política de Privacidad</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-[#6F6A64] hover:bg-primary-container hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="share">share</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-[#6F6A64] hover:bg-primary-container hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="mail">mail</span>
+</a>
+</div>
+</div>
+<div class="w-full max-w-[1140px] mx-auto px-6 mt-12 pt-8 border-t border-[#6F6A64]/10 text-center">
+<p class="text-[#6F6A64] dark:text-stone-400 font-serif text-xs opacity-70">© 2024 Maria Silvia Milanese. All rights reserved.</p>
+</div>
+</footer>
+</body></html>
