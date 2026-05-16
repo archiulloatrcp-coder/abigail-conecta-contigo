@@ -10,6 +10,7 @@ const MENU_ITEMS = [
   { label: 'Psicologos', path: '/admin/psicologos', section: 'staff' },
   { label: 'Especialidades', path: '/admin/especialidades', section: 'especialidades' },
   { label: 'Pacientes', path: '/admin/pacientes', section: 'pacientes' },
+  { label: 'Mensajes', path: '/admin/mensajes', section: 'mensajes' },
   { label: 'Citas (Appointments)', path: '/admin/citas/list', section: 'citas' },
   { label: 'Pagos (Payments)', path: '/admin/pagos', section: 'pagos' },
   { label: 'Calendario', path: '/admin/calendario', section: 'calendar' },
@@ -28,6 +29,7 @@ function AdminShell() {
   const canViewStaff = usePermission('staff', 'canView')
   const canViewEspecialidades = usePermission('especialidades', 'canView')
   const canViewPacientes = usePermission('pacientes', 'canView')
+  const canViewMensajes = usePermission('mensajes', 'canView')
   const canViewCitas = usePermission('citas', 'canView')
   const canViewPagos = usePermission('pagos', 'canView')
 
@@ -37,6 +39,7 @@ function AdminShell() {
     staff: canViewStaff,
     especialidades: canViewEspecialidades,
     pacientes: canViewPacientes,
+    mensajes: canViewMensajes,
     citas: canViewCitas,
     pagos: canViewPagos,
     calendar: role === 'admin',

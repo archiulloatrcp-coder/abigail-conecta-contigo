@@ -12,6 +12,7 @@ import Specialties from '../pages/Admin/Specialties.jsx'
 import PsychologistsList from '../pages/Admin/PsychologistsList.jsx'
 import PsychologistForm from '../pages/Admin/PsychologistForm.jsx'
 import Patients from '../pages/Admin/Patients.jsx'
+import ClientMessages from '../pages/Admin/ClientMessages.jsx'
 import MainLayout from '../layouts/MainLayout.jsx'
 import Home from '../pages/Home.jsx'
 import Login from '../pages/Auth/Login.jsx'
@@ -41,6 +42,7 @@ function App() {
                 <Route path="psicologos/nuevo" element={<PsychologistForm />} />
                 <Route path="psicologos/editar/:id" element={<PsychologistForm />} />
                 <Route path="pacientes" element={<Patients />} />
+                <Route path="mensajes" element={<ClientMessages />} />
               </Route>
             </Route>
               <Route path="/cliente" element={<Navigate to="/client" replace />} />

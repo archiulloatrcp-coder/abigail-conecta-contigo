@@ -15,6 +15,20 @@ The React Compiler is not enabled on this template because of its impact on dev 
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
+## Variables requeridas para mensajes de clientes
+
+La implementación gratuita del módulo de mensajes usa Firestore directo desde el frontend. No requiere Firebase Functions ni variables adicionales fuera de las credenciales Firebase ya configuradas en `.env`.
+
+Protecciones incluidas en esta versión:
+
+- validaciones de formulario en cliente
+- honeypot invisible
+- tiempo mínimo antes de enviar
+- control local de frecuencia
+- validaciones de estructura en `firestore.rules`
+
+La colección usada para los leads es `client_messages`.
+
 
 
 

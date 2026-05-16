@@ -1,8 +1,11 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
+import ContactRequestModal from '../components/ContactRequestModal.jsx'
+
 function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [contactModalOpen, setContactModalOpen] = useState(false)
 
   return (
     <div className="bg-background text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container min-h-screen">
@@ -16,7 +19,11 @@ function Home() {
           <div className="hidden md:flex items-center gap-8">
             <a className="text-[#6F6A64] dark:text-stone-400 font-label-md text-label-md hover:text-[#B78F8F] transition-colors" href="#about">Sobre Mí</a>
             <a className="text-[#6F6A64] dark:text-stone-400 font-label-md text-label-md hover:text-[#B78F8F] transition-colors" href="#services">Especialidades</a>
-            <button className="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-full font-label-md text-label-md hover:opacity-90 transition-all">
+            <button
+              type="button"
+              onClick={() => setContactModalOpen(true)}
+              className="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-full font-label-md text-label-md hover:opacity-90 transition-all"
+            >
               Agendar gratis
             </button>
           </div>
@@ -32,6 +39,16 @@ function Home() {
           <div className="md:hidden bg-[#F7F5F2] border-b border-[#F0E9E4] px-6 pb-4 flex flex-col gap-3">
             <a className="text-[#6F6A64] hover:text-[#B78F8F]" href="#about" onClick={() => setMobileMenuOpen(false)}>Sobre Mí</a>
             <a className="text-[#6F6A64] hover:text-[#B78F8F]" href="#services" onClick={() => setMobileMenuOpen(false)}>Especialidades</a>
+            <button
+              type="button"
+              onClick={() => {
+                setMobileMenuOpen(false)
+                setContactModalOpen(true)
+              }}
+              className="rounded-full bg-primary-container px-4 py-2 text-left text-sm font-semibold text-on-primary-container"
+            >
+              Solicitar consulta
+            </button>
           </div>
         )}
       </header>
@@ -52,7 +69,11 @@ function Home() {
                 Bienvenidos a un espacio seguro donde tu bienestar emocional es la prioridad. Con un enfoque empático y profesional, te acompaño en tu proceso de crecimiento personal. Mi compromiso es brindarte herramientas efectivas para enfrentar los desafíos de la vida, promoviendo tu salud mental y desarrollo integral en un ambiente de confianza y respeto.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-primary text-on-primary px-8 py-4 rounded-full font-label-md text-label-md hover:shadow-lg transition-all flex items-center justify-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => setContactModalOpen(true)}
+                  className="bg-primary text-on-primary px-8 py-4 rounded-full font-label-md text-label-md hover:shadow-lg transition-all flex items-center justify-center gap-2"
+                >
                   Solicitar consulta
                   <span className="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
                 </button>
@@ -287,6 +308,11 @@ function Home() {
           <p className="text-[#6F6A64] dark:text-stone-400 font-serif text-xs opacity-70">© {new Date().getFullYear()} Ps. Abigail Sánchez Ávila. Todos los derechos reservados.</p>
         </div>
       </footer>
+      <ContactRequestModal
+        isOpen={contactModalOpen}
+        onClose={() => setContactModalOpen(false)}
+        source="landing"
+      />
     </div>
   )
 }
