@@ -1,6 +1,9 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 function Home() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
   return (
     <div className="bg-background text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container min-h-screen">
       {/* TopAppBar */}
@@ -8,7 +11,7 @@ function Home() {
         <div className="flex justify-between items-center w-full max-w-[1140px] mx-auto h-20 px-6">
           <div className="flex items-center gap-3">
             <img src="/logo.png" alt="Conecta Contigo Logo" className="h-12 w-auto object-contain" />
-            <span className="text-xl font-bold font-serif text-[#6F6A64] dark:text-[#F0E9E4]">Abigail Conecta Contigo</span>
+            <span className="text-xl font-bold font-serif text-[#6F6A64] dark:text-[#F0E9E4]">Psic. Abigail Conecta Contigo</span>
           </div>
           <div className="hidden md:flex items-center gap-8">
             <a className="text-[#6F6A64] dark:text-stone-400 font-label-md text-label-md hover:text-[#B78F8F] transition-colors" href="#about">Sobre Mí</a>
@@ -17,10 +20,20 @@ function Home() {
               Agendar gratis
             </button>
           </div>
-          <button className="md:hidden text-on-surface">
+          <button 
+            className="md:hidden text-on-surface"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Menú"
+          >
             <span className="material-symbols-outlined" data-icon="menu">menu</span>
           </button>
         </div>
+        {mobileMenuOpen && (
+          <div className="md:hidden bg-[#F7F5F2] border-b border-[#F0E9E4] px-6 pb-4 flex flex-col gap-3">
+            <a className="text-[#6F6A64] hover:text-[#B78F8F]" href="#about" onClick={() => setMobileMenuOpen(false)}>Sobre Mí</a>
+            <a className="text-[#6F6A64] hover:text-[#B78F8F]" href="#services" onClick={() => setMobileMenuOpen(false)}>Especialidades</a>
+          </div>
+        )}
       </header>
 
       <main className="mt-20">
@@ -235,7 +248,7 @@ function Home() {
                   
                   <div className="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant flex flex-col items-center gap-2">
                     <span className="material-symbols-outlined text-primary" data-icon="mail">mail</span>
-                    <p className="font-label-md">sanchezavilatayamneabigail@gmail.com</p>
+                    <p className="font-label-md text-center break-all max-w-[200px]">sanchezavilatayamneabigail@gmail.com</p>
                   </div>
                   
                   <div className="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant flex flex-col items-center gap-2">
